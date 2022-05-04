@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <nav class="nav-bar secondary-text">
+        <div class="nav-bar-wrapper">
+            <div class="nav-logo-wrapper">
+                <i class="nav-logo"></i>
+                <span class="nav-title">MySpace</span>
+            </div>
+
+            <div class="nav-menu-wrapper">
+                <span class="nav-menu-item">About us</span>
+                <span class="nav-menu-item">News</span>
+                <span class="nav-menu-item">Blog</span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="page-wrapper">
+    <section class="registration-section">
+        <div class="registration-form-wrapper">
+
+            <div class="registration-form-image">
+                <img src="/Assets/premium-icon-mercury-2739612.png" class="registration-image" id="planet-image" alt="">
+            </div>
+
+            <div class="form-card flex-colum">
+                <div class="form-wrapper">
+
+                    <h2 class="form-title">Space flight queue</h2>
+
+                    <form class="registration-form flex-colum" action="submit">
+                        <label class="input-label" for="name">Name</label>
+                        <input type="text" class="form-input" id="name" name="name" placeholder="Name..." required>
+
+                        <label class="input-label" for="phone">Phone</label>
+                        <input type="tel" class="form-input" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (_) __ __ __" required>
+
+                        <label class="input-label" for="select">Planet</label>
+                        <select name="select" id="select" class="form-input form-input-select" required>
+                            <option value="mercury">Mercury</option>
+                            <option value="venera">Venera</option>
+                            <option value="earth">Earth</option>
+                            <option value="mars">Mars</option>
+                            <option value="neptune">Neptune</option>
+                            <option value="uranus">Uranus</option>
+                        </select>
+
+                       <button id="registration-button" class="registration-button">Registration</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    MySpace 2022
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

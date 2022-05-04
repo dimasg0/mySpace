@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+:root {
+    --min-text-color: #566F96;
+    --button-dimmed: #AEDBCE;
+    --button-active: #30C598;
+    --card: #fff;
+    --border: #CEDDDB;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: Roboto, serif;
+    background-image: url("/Assets/Bg.svg");
+    background-size: cover;
+    min-width: 340px;
+}
+
+.page-wrapper {
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.header, .page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.registration-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.registration-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.registration-form {
+    height: 400px;
+}
+
+
+/* NAV HEADER */
+.nav-bar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px 0 80px;
+}
+
+.nav-logo-wrapper {
+    position: relative;
+    padding-left: 80px;
+}
+
+.nav-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18;
+    line-height: 2em;
+}
+
+.nav-title::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    border-left: 1px solid var(--min-text-color);
+    width: 10px;
+    height: 26px;
+    right: 65px;
+    top: 5px;
+}
+
+.nav-logo {
+    position: absolute;
+    background-image: url('/Assets/Planet (logo).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 30px;
+    left: 5px;
+}
+
+
+.nav-menu-item {
+    font-size: 14px;
+    line-height: 100%;
+    padding-left: 32px;
+}
+
+.nav-menu-item::nth-child(3) {
+   padding-right: 36px;
+}
+
+.nav-menu-icon {
+    display: inline-block;
+    background-image: url('/Assets/uran_logo.svg');
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+
+
+/* FORM */
+.registaration-form-image {
+    height: 600px;
+}
+
+.form-card {
+    max-width: 515px;
+    min-width: 350px;
+    height: 500px;
+    background-color: var(--card);
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px 3px beige;
+}
+
+.form-wrapper {
+    min-width: 50px;
+    padding: 48px;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 32px;
+    min-width: 372px;
+}
+
+select, input {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 16px;
+}
+
+.form-input {
+    width: 280px;
+    height: 48px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.input-label {
+    padding: 24px 0 8px 8;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 5px;
+}
+
+.input-label:first-of-type {
+   padding-top: 0;
+}
+
+.form-input-select {
+    appearance: none;
+    background-image: url("../Assets/icons/Expand More.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.registration-button {
+    background-color: var(--button-dimmed);
+    border: none;
+    border-radius: 4px;
+    color: var(--card);
+    padding: 9px 24px;
+    width: 198px;
+    height: 58px;
+    margin-top: 48px;
+    font-size: 18px;
+}
+
+.registration-button:hover {
+    background-color: var(--button-active);
+}
+
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.secondary-text {
+    color: var(--min-text-color);
+    font-size: 14px;
+}
+
+
+/* Utility */
+
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
